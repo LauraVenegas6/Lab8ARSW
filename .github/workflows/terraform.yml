@@ -74,7 +74,7 @@ jobs:
           path: infra
 
       - name: Terraform Init
-        run: terraform init -backend-config=backend.hcl
+        run: terraform init -backend-config=infra/backend.hcl
 
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
