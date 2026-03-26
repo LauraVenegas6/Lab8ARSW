@@ -27,7 +27,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   name                = "${var.prefix}-vm-${count.index}"
   location            = var.location
   resource_group_name = var.resource_group_name
-  size                = "Standard_B1s"
+  size                = "Standard_B1ms"
 
   admin_username = var.admin_username
   network_interface_ids = [azurerm_network_interface.nic[count.index].id]
