@@ -20,8 +20,8 @@ override.tf.json
 !env/prod.tfvars.example
 
 # Archivos de backend locales
-backend.hcl
-*.hcl.local
+# backend.hcl
+# *.hcl.local
 
 # Carpeta de caché local
 .terraform/

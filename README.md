@@ -220,3 +220,8 @@ terraform destroy -var-file=env/dev.tfvars
 
 ## Créditos y material de referencia
 - Azure, Terraform, IaC, LB y VMSS (docs oficiales) — revisa enlaces en clase.
+
+ Este es una prueba para saber si el ci
+ y cd funciona   
+
+ 
