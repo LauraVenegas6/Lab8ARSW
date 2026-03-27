@@ -42,7 +42,7 @@ Este laboratorio implementa una arquitectura de alta disponibilidad en Azure uti
 ### Componentes Principales
 
 <div align="center">
-  <img src="Img/variables.tf.png" alt="alt text" width="500"/>
+  <img src="img/variables.tf.png" alt="alt text" width="500"/>
 </div>  
 
 - **Resource Group:** `lab8-rg`
@@ -102,7 +102,7 @@ Lab8ARSW/
 ### 1. Bootstrap del Backend Remoto
 
 <div align="center">
-  <img src="Img/comandos.png" alt="alt text" width="500"/>
+  <img src="img/comandos.png" alt="alt text" width="500"/>
 </div>  
 
 ```bash
@@ -123,11 +123,11 @@ az storage container create --name $CONTAINER --account-name $STO
 ### 2. Autenticación en Azure
 
 <div align="center">
-  <img src="Img/login1.png" alt="alt text" width="500"/>
+  <img src="img/login1.png" alt="alt text" width="500"/>
 </div>  
 
 <div align="center">
-  <img src="Img/login2.png" alt="alt text" width="500"/>
+  <img src="img/login2.png" alt="alt text" width="500"/>
 </div>  
 
 
@@ -163,11 +163,11 @@ tags = {
 ### Inicialización de Terraform
 
 <div align="center">
-  <img src="Img/terraform1.png" alt="alt text" width="500"/>
+  <img src="img/terraform1.png" alt="alt text" width="500"/>
 </div>  
 
 <div align="center">
-  <img src="Img/terraform2.png" alt="alt text" width="500"/>
+  <img src="img/terraform2.png" alt="alt text" width="500"/>
 </div>  
 
 ```bash
@@ -183,7 +183,7 @@ Terraform inicializa correctamente:
 ### Validación de Configuración
 
 <div align="center">
-  <img src="Img/planOutput.png" alt="alt text" width="500"/>
+  <img src="img/planOutput.png" alt="alt text" width="500"/>
 </div>  
 
 ```bash
@@ -194,7 +194,7 @@ terraform validate
 ### Plan de Ejecución
 
 <div align="center">
-  <img src="Img/planOutput1.png" alt="alt text" width="500"/>
+  <img src="img/planOutput1.png" alt="alt text" width="500"/>
 </div>  
 
 ```bash
@@ -213,7 +213,7 @@ Plan generado:
   - Storage Account (state)
 
 <div align="center">
-  <img src="Img/curl.png" alt="alt text" width="500"/>
+  <img src="img/curl.png" alt="alt text" width="500"/>
 </div>  
 
 ### Aplicación de Cambios
@@ -256,7 +256,7 @@ az ad sp create --id <app-id>
 3. **Configuración de Federated Credentials:**
 
 <div align="center">
-  <img src="Img/azure1.png" alt="alt text" width="500"/>
+  <img src="img/azure1.png" alt="alt text" width="500"/>
 </div>  
 ```bash
 az ad app federated-credential create \
@@ -277,7 +277,7 @@ Configuración en `federated.json`:
 4. **Asignación de Rol:**
 
 <div align="center">
-  <img src="Img/role.png" alt="alt text" width="500"/>
+  <img src="img/role.png" alt="alt text" width="500"/>
 </div>  
 ```bash
 az role assignment create \
@@ -289,7 +289,7 @@ az role assignment create \
 ### Secrets de GitHub
 
 <div align="center">
-  <img src="Img/secrets.png" alt="alt text" width="500"/>
+  <img src="img/secrets.png" alt="alt text" width="500"/>
 </div>  
 Configurados en el repositorio:
 - `AZURE_CLIENT_ID`
@@ -299,7 +299,7 @@ Configurados en el repositorio:
 ### Workflow de GitHub Actions
 
 <div align="center">
-  <img src="Img/workflow.png" alt="alt text" width="500"/>
+  <img src="img/workflow.png" alt="alt text" width="500"/>
 </div>  
 El workflow `.github/workflows/terraform.yml` ejecuta:
 
@@ -348,7 +348,7 @@ El Load Balancer monitorea continuamente el estado de las VMs mediante TCP healt
 ### Outputs Esperados
 
 <div align="center">
-  <img src="Img/output.png" alt="alt text" width="500"/>
+  <img src="img/output.png" alt="alt text" width="500"/>
 </div>  
 ```
 lb_public_ip = "20.114.222.55"
@@ -364,7 +364,7 @@ vm_names = [
 ## Diagrama de Arquitectura
 
 <div align="center">
-  <img src="Img/diagrama.png" alt="alt text" width="500"/>
+  <img src="img/diagrama.png" alt="alt text" width="500"/>
 </div>  
 El diagrama muestra la arquitectura completa implementada:
 
